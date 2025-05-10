@@ -17,4 +17,5 @@ public interface UmsMemberService {
      * 判断验证码和手机号码是否匹配
      */
     CommonResult verifyAuthCode(String telephone, String authCode);
+
 }
