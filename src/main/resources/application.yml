@@ -24,6 +24,10 @@ spring:
     elasticsearch:
       repositories:
         enabled: true #开启ES仓库配置，自动为仓库接口生成实现类
+    mongodb:
+      host: localhost # MongoDB的连接地址
+      port: 27017 # MongoDB的连接端口号
+      database: mall-port # MongoDB的连接的数据库
   elasticsearch:
     uris: http://localhost:9200 #ES的连接地址以及端口号
 
@@ -61,4 +65,5 @@ secure:
       - /druid/**
       - /admin/**
       - /esProduct/**
+      - /member/readHistory/**
 
